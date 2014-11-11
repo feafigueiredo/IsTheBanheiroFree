@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="BanheiroApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Is the banheiro free? -- GERENCIADOR --</title>
+<link rel="stylesheet" type="text/css" href="mycss.css" />
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-controller="controller as ctrl">
+	<div class="content">
+		<div id="masculino">
+			<em class="masc"></em> 
+			<a href ng-click="ctrl.mudarEstadoMasculino()" ng-class="ctrl.masculinoDesc"> 
+				<em ng-class="ctrl.masculinoDesc"></em>
+			</a>
+		</div>
+		<div id="feminino">
+			<em class="fem"></em> 
+			<a href ng-click="ctrl.mudarEstadoFeminino()" ng-class="ctrl.femininoDesc"> 
+				<em ng-class="ctrl.femininoDesc"></em>
+			</a>
+		</div>
+	</div>
+</body>
+</html>

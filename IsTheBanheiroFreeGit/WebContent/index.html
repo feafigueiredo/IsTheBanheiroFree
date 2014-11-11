@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="BanheiroApp">
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="refresh"
+	content="60; URL=http://172.27.10.94:8080/IsTheBanheiroFree/">
+<title>Is the "banheiro" free?</title>
+<link rel="stylesheet" type="text/css" href="bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="mycss.css" />
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-controller="controller as ctrl">
+	<div class="content">
+		<div id="masculino">
+			<em class="masc"></em><em ng-class="ctrl.masculinoDesc"></em>
+		</div>
+		<div id="feminino">
+			<em class="fem"></em><em ng-class="ctrl.femininoDesc"></em>
+		</div>
+		<hr />
+		<div>
+			<p>
+				<b>Última atualização: </b>{{ctrl.myTime | date:'yyyy-MM-dd HH:mm'}}
+			</p>
+		</div>
+	</div>
+	
+</body>
+</html>
