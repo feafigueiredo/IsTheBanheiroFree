@@ -13,7 +13,7 @@
 		
 		$http({
 			method : 'POST',
-			url : 'http://172.27.10.94:8080/IsTheBanheiroFreeGit/banheiro',
+			url : 'http://localhost:8080/IsTheBanheiroFreeGit/banheiro',
 			headers : {
 				'Content-Type' : 'application/json'
 			}
